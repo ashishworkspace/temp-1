@@ -1,0 +1,7 @@
+dotnet publish --output C:\Publish -a win-x64 -c Debug Cgolem.sln
+
+
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe /target:publish
+
+
+msbuild "C:\Projects\Cgolem_Prod\DataEntry\C-GOLEM DataEntry.csproj" -t:restore /t:Build;Publish /p:Configuration=Release /p:Platform=x64 /p:PublishProfile=x64Profile /p:OutputPath=C:\Publish\
